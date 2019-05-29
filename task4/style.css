@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+html {
+    font-size: 625%;
+}
+body {
+    color: #ffffff;
+    background-color: #eff0f4;
+}
+a {
+    color: #ffffff;
+}
+input {
+    border: none;
+    outline: none;
+}
+.main {
+    width: 100%;
+}
+.header,.btn-wrap,.forget {
+    width: 100%;
+}
+.header,.btn-wrap {
+    background-color: #5fc0cd;
+}
+.header {
+    height: 0.4rem;
+    position: relative;
+}
+.cancel,.login,.register {
+    font-size: 0.16rem;
+}
+.cancel {
+    position: absolute;
+    top: 0.1rem;
+    left: 0.12rem;
+}
+.login {
+    position: absolute;
+    top: 0.1rem;
+    right: 50%;
+}
+.register {
+    position: absolute;
+    top: 0.1rem;
+    right: 0.12rem;
+}
+.number,.password {
+    height: 0.5rem;
+    background-color: #ffffff;
+    margin-top: 0.05rem;
+    display: flex;
+    align-items: center;
+}
+.iphone,.locked,.line {
+    display: inline-block;
+    vertical-align: middle;
+}
+.iphone,.locked {
+    width: 0.15rem;
+    height: 0.2rem;
+    margin: 0.1rem 0.13rem 0.1rem 0.15rem;
+}
+.iphone {
+    background: url("images/iphone.png")no-repeat;
+    background-size: 100% 100%;
+}
+.locked {
+    background: url("images/locked.png")no-repeat;
+    background-size: 100% 100%;
+}
+.line {
+    width: 0.02rem;
+    height: 0.25rem;
+    background: url("images/line.png")no-repeat;
+    background-size: 100% 100%;
+}
+.inum {
+    width: 100%;
+    font-size: 0.14rem;
+    margin-left: 0.1rem;
+}
+.btn-wrap {
+    padding-top: 0.1rem;
+    padding-bottom: 0.1rem;
+    border: none;
+    color: #fff;
+    font-size: 0.16rem;
+}
+.link {
+    color: #5fc0cd;
+    float: right;
+    font-size: 0.16rem;
+    padding-top: 0.1rem;
+    padding-right: 0.1rem;
+    text-decoration: underline;
+}

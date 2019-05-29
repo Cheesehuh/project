@@ -1,0 +1,80 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+html {
+    font-size: 62.5%;
+}
+body {
+    background-color: #68cdd5;
+}
+.main {
+    width: 100%;
+}
+.top {
+    width: 2rem;
+    height: 2rem;
+    margin-top: 1.2rem;
+    margin-left: 1.2rem;
+    background: url("images/top.png")no-repeat;
+    background-size: 100% 100%;
+}
+.wrap-logo {
+    margin-top: 1.7rem;
+}
+.logo {
+    width: 9rem;
+    height: 3.5rem;
+    background: url("images/logo.png")no-repeat;
+    background-size: 100% 100%;
+    margin: 0 auto;
+}
+.content {
+    display: flex;
+    justify-content: center;
+    padding-top: 5rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+}
+.content span {
+    text-align: left;
+    color: #ffffff;
+    font-size: 1.4rem;
+    font-family: "微软雅黑",serif;
+    letter-spacing: 1.5pt;
+}
+.left,.right {
+    margin-top: 5rem;
+}
+.left {
+    float: left;
+    position: fixed;
+    left: 3rem;
+    top: 20rem;
+}
+.left .img1 {
+    background: url("images/1.png")no-repeat;
+    background-size: 100% 100%;
+}
+.left .img1,.right .img2 {
+    width: 4rem;
+    height: 4rem;
+    margin: 0 auto;
+}
+.left span,.right span {
+    font-size: 1rem;
+    color: #ffffff;
+    display: block;
+    text-align: center;
+    margin-top: 0.5rem;
+}
+.right {
+    float: right;
+    position: fixed;
+    right: 3rem;
+    top: 20rem;
+}
+.right .img2 {
+    background: url("images/2.png")no-repeat;
+    background-size: 100% 100%;
+}
