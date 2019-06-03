@@ -92,18 +92,11 @@ a:link {
     width: 100%;
     height: 62vh;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-.game-left {
-    width: 95%;
-    height: 92%;
-    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-.game-left span {
+.game-bottom span {
     width: 85%;
     height: 3rem;
     color: #8d8d8d;
@@ -111,14 +104,22 @@ a:link {
     text-align: center;
 }
 .btn-style {
-    width: 92%;
+    width: 90%;
     height: 7rem;
     border: none;
     background-color: #69d1e9;
-}
-.font-style {
     font-size: 1.6rem;
     color: #fff;
+}
+.icon-tri:after {
+    content: "";
+    position: absolute;
+    right: 2.2rem;
+    width: 0;
+    height: 0;
+    border-top: 14px solid transparent;
+    border-bottom: 14px solid transparent;
+    border-left: 14px solid #fbb435;
 }
 .switch {
     width: 5rem;
@@ -137,18 +138,4 @@ a:link {
 .switch span:first-child {
     background: #69d1e9;
     border: 1px solid #69d1e9;
-}
-.game-right {
-    width: 2rem;
-    height: 85%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.icon-tri {
-    width: 2.8rem;
-    height: 5.7rem;
-    background: url("images/css_sprites.png")no-repeat -1rem -52.7rem;
-    transform: scale(0.7);
-    margin-bottom: 2.5rem;
 }
