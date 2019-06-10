@@ -1,0 +1,72 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+html {
+    font-size: 10px;
+}
+/*header开始*/
+.header {
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    background-color: #29bde0;
+}
+.header span{
+    font-size: 1.6rem;
+    color: #fff;
+}
+.home,
+.information{
+    width: 5rem;
+    height: 4rem;
+    transform: scale(0.5);
+}
+.home {
+    background: url("images/css_sprites.png")no-repeat -0.5rem -41rem;
+    margin-left: -0.5rem;
+}
+.information {
+    background: url("images/css_sprites.png")no-repeat -0.5rem -36rem;
+    margin-right: -0.5rem;
+}
+/*container开始*/
+.container {
+    position: absolute;
+    top: 4rem;
+    height: 60%;
+    background-color: #29bde0;
+}
+.victory {
+    width: 7rem;
+}
+/*footer开始*/
+.footer {
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 6.5rem;
+    background-color: rgba(41,189,224,0.5);
+}
+.btn-reset,
+.btn-submit {
+    width: 40vw;
+    height: 3.5rem;
+    border-radius: 0.7rem;
+    color: #fff;
+    font-size: 1.6rem;
+    margin: 1rem;
+}
+.btn-reset {
+    background-color: #f66f6f;
+    border: 1px solid #f66f6f;
+}
+.btn-submit {
+    background-color: #fbb435;
+    border: 1px solid #fbb435;
+}
