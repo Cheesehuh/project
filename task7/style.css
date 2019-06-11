@@ -13,11 +13,11 @@ a:link {
     display: flex;
     align-items: flex-end;
 }
-.icon-nav {
-    width: 3.4rem;
-    height: 2.7rem;
-    background: url("images/css_sprites.png")no-repeat -1rem -0.8rem;
-    transform: scale(0.5);
+.icon-nav img{
+    width: 23px;
+    height: 21px;
+    margin-left: 0.5rem;
+    margin-bottom: 0.5rem;
 }
 /*开始选择游戏*/
 .content {
@@ -69,7 +69,6 @@ a:link {
 /*捉鬼游戏选择版本*/
 .game-wrap {
     width: 90%;
-    height: 74vh;
     border: 1px solid #c9c9c9;
     background-color: #fff;
     display: flex;
@@ -79,7 +78,7 @@ a:link {
 }
 .game-top {
     width: 100%;
-    height: 8vh;
+    height: 4rem;
     border-bottom: 1px solid #fbb435;
     display: flex;
     justify-content: center;
@@ -90,11 +89,11 @@ a:link {
 }
 .game-bottom {
     width: 100%;
-    height: 62vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding-top: 1rem;
 }
 .game-bottom span {
     width: 85%;

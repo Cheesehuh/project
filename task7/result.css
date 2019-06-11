@@ -26,13 +26,8 @@ html {
     height: 4rem;
     transform: scale(0.5);
 }
-.home {
-    background: url("images/css_sprites.png")no-repeat -0.5rem -41rem;
-    margin-left: -0.5rem;
-}
 .information {
-    background: url("images/css_sprites.png")no-repeat -0.5rem -36rem;
-    margin-right: -0.5rem;
+    margin-right: -1rem;
 }
 /*container开始*/
 .container {

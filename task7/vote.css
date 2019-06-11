@@ -40,11 +40,10 @@ html {
     display: flex;
     justify-content: flex-end;
 }
-.nav {
-    width: 4rem;
-    height: 4rem;
-    background: url("images/css_sprites.png")no-repeat -0.5rem -26rem;
-    transform: scale(0.5);
+.nav  img {
+    width: 2rem;
+    height: 2rem;
+    margin-left: 1rem;
 }
 .font-vote {
     color: #fff;
@@ -52,11 +51,10 @@ html {
     height: 4rem;
     line-height: 4rem;
 }
-.cancel {
-    width: 4rem;
-    height: 4rem;
-    background: url("images/css_sprites.png")no-repeat -0.5rem -21rem;
-    transform: scale(0.5);
+.cancel img {
+    width: 2rem;
+    height: 2rem;
+    margin-right: 1rem;
 }
 /*提示开始*/
 .tips-pos {
