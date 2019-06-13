@@ -31,14 +31,17 @@ html {
 .nav-wrap {
     display: flex;
     justify-content: flex-start;
+    align-items: center;
 }
 .vote-wrap {
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 .cancel-wrap {
     display: flex;
     justify-content: flex-end;
+    align-items: center;
 }
 .nav  img {
     width: 2rem;
