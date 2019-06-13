@@ -20,27 +20,7 @@ html {
     height: 4rem;
     background-color: #29bde0;
     display: flex;
-    align-items: center;
-}
-.nav-wrap,
-.vote-wrap,
-.cancel-wrap{
-    flex: 1;
-    margin-top: 1rem;
-}
-.nav-wrap {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-}
-.vote-wrap {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.cancel-wrap {
-    display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
     align-items: center;
 }
 .nav  img {
