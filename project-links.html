@@ -5,7 +5,9 @@
     <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
     <title>项目链接</title>
     <style>
-        body {
+        html,body {
+            margin: 0;
+            padding: 0;
             width: 100%;
         }
         a {
@@ -22,15 +24,17 @@
         }
         .col {
             display: flex;
-            flex-wrap: wrap;
-            justify-content: space-around;
+            justify-content: space-evenly;
             margin: 1rem;
         }
-        .f3 {
-            width: 30vw;
-            height: 17vw;
+        .col ul {
             display: flex;
-            justify-content: center;
+            flex-flow: wrap column;
+            justify-content: flex-start;
+            list-style: none;
+        }
+        .col ul li {
+            margin: 1.2rem;
         }
     </style>
 </head>
@@ -38,13 +42,34 @@
 <div class="text">修真院项目链接</div>
 <div class="target">
     <div class="col">
-        <a href="https://cheesehuh.github.io/project/task3/index.html" target="_blank" class="f3">CSS-TASK3</a>
-        <a href="https://cheesehuh.github.io/project/task4/index.html" target="_blank" class="f3">CSS-TASK4</a>
-        <a href="https://cheesehuh.github.io/project/task5/index.html" target="_blank" class="f3">CSS-TASK5</a>
-        <a href="https://cheesehuh.github.io/project/task6/index.html" target="_blank" class="f3">CSS-TASK6</a>
-        <a href="https://cheesehuh.github.io/project/task7/index.html" target="_blank" class="f3">CSS-TASK7_1</a>
-        <a href="https://cheesehuh.github.io/project/task7/vote.html" target="_blank" class="f3">CSS-TASK7_2</a>
-        <a href="https://cheesehuh.github.io/project/task7/result.html" target="_blank" class="f3">CSS-TASK7_3</a>
+        <ul>
+            <li>
+                <a href="https://cheesehuh.github.io/project/task3/index.html" target="_blank">CSS-TASK3</a>
+            </li>
+            <li>
+                <a href="https://cheesehuh.github.io/project/task4/index.html" target="_blank">CSS-TASK4</a>
+            </li>
+            <li>
+                <a href="https://cheesehuh.github.io/project/task5/index.html" target="_blank">CSS-TASK5</a>
+            </li>
+            <li>
+                <a href="https://cheesehuh.github.io/project/task6/index.html" target="_blank">CSS-TASK6</a>
+            </li>
+            <li>
+                <a href="https://cheesehuh.github.io/project/task7/index.html" target="_blank">CSS-TASK7_1</a>
+            </li>
+            <li>
+                <a href="https://cheesehuh.github.io/project/task7/vote.html" target="_blank">CSS-TASK7_2</a>
+            </li>
+            <li>
+                <a href="https://cheesehuh.github.io/project/task7/result.html" target="_blank">CSS-TASK7_3</a>
+            </li>
+        </ul>
+        <ul>
+            <li>
+                <a href="https://cheesehuh.github.io/project/task8/result.html" target="_blank">CSS-TASK8_1</a>
+            </li>
+        </ul>
     </div>
 </div>
 </body>
