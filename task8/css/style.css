@@ -1,9 +1,11 @@
 html,body {
     margin: 0;
     padding: 0;
-    font-size: 10px;
     height: 100%;
     font-family: MicrosoftYaHei,sans-serif;
+}
+html {
+    font-size: 10px;
 }
 h5 {
     font-size: 1.6rem;
@@ -77,6 +79,9 @@ h5 {
     display: inline-block;
 }
 /*导航栏*/
+.navbar {
+    margin-bottom: 0;
+}
 .navbar-default {
     background-color: #29b078;
     border-color: #29b078;
@@ -103,7 +108,6 @@ h5 {
 /*header结束*/
 main {
     width: 100%;
-    margin-top: -1.7rem;
 }
 .block {
     margin-top: 7rem;
@@ -150,7 +154,6 @@ main {
     background-color: #fff;
     box-shadow: 0 1px 2px 0 rgba(8,1,3,.15);
     border-radius: 2px;
-    margin-bottom: 2rem;
 }
 .show-avatar {
     text-align: center;
@@ -163,26 +166,21 @@ main {
 .show-box p {
     color: #999;
     margin: 1rem 1rem 0 1rem;
+    padding: 0 2rem;
 }
 .show-avatar img {
     width: 54px;
 }
-.switch {
-    width: 100%;
-    text-align: center;
-}
-.switch span {
-    width: 0.7rem;
-    height: 0.7rem;
-    background: rgba(240,240,240,0.8);
-    border: 1px solid rgba(240,240,240,0.8);
-    border-radius: 1.5rem;
-    display: inline-block;
-    padding: 0;
-}
-.switch span:first-child {
+/*优秀学员轮播默认圆点颜色修改*/
+.swiper-pagination-bullet-active {
     background: #29b078;
-    border: 1px solid #29b078;
+}
+/*圆点距离修改*/
+.swiper-container {
+    padding-bottom: 2rem;
+}
+.swiper-container-horizontal>.swiper-pagination-bullets {
+    bottom: 0;
 }
 /*战略合作企业*/
 .company-box {
