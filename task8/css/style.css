@@ -248,6 +248,7 @@ footer {
 .footer-foot {
     font-size: 12px;
     padding: 10px 0;
+    margin-top: 5px;
     border-top: 1px solid #32c086;
 }
 

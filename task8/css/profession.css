@@ -39,11 +39,21 @@ body {
 /*表格*/
 table {
     background-color: #fff;
+    width: 100%;
 }
 td {
     padding: 10px;
     font-size: 10px;
     color: #999;
+}
+.pro-bt {
+    border-top: 1px solid #edf1f2;
+}
+.pro-br {
+    border-right: 1px solid #edf1f2;
+}
+.pro-wid {
+    width: 50%;
 }
 .pro-box {
     margin: 2rem 0;
@@ -51,19 +61,14 @@ td {
 .pro-border {
     border: 1px solid #edf1f2;
 }
-.pro-bb {
-    border-bottom: 1px solid #edf1f2
-}
-.pro-bl {
-    border-left: 1px solid #edf1f2
-}
 .pro-col-1 {
     color: #000;
+    border: none;
 }
 .pro-col-1 img {
     float: left;
-    margin: 20px 15px;
-    width: 5.8rem;
+    width: 8rem;
+    margin: 15px;
 }
 .pro-col-1 span {
     font-size: 1.6rem;
@@ -111,6 +116,7 @@ td {
 }
 .pro-mask td {
     color: #fff;
+    border: none;
 }
 .pro-mask div:last-child {
     width: 15.7rem;
