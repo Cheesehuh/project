@@ -1,9 +1,18 @@
 body {
     background-color: #fafafa;
 }
+@media screen and  (max-width: 768px) {
+    .max {
+        display: none;
+    }
+}
+@media screen and  (min-width: 768px) {
+    .min {
+        display: none;
+    }
+}
 .header-img {
     width: 100%;
-    margin-top: -1.7rem;
 }
 .top-bar {
     margin: 3rem 0;
@@ -24,6 +33,10 @@ body {
     padding-right: 0;
     margin-bottom: 2rem;
     margin-right: 2rem;
+}
+.aside-pad {
+    padding-top: 4rem;
+    padding-bottom: 12rem;
 }
 .aside-top {
     font-size: 1.6rem;
@@ -48,6 +61,9 @@ body {
     align-items: center;
     font-size: 1.4rem;
     color: #29b078;
+}
+.aside-bottom ul li .dot-active {
+    background-color: #ff7f02;
 }
 .aside-bottom ul li .active {
     color: #ff5c00;
