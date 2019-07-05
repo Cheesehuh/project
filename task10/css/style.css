@@ -5,10 +5,33 @@ html,body {
     .pro-line {
         min-width: 90px;
     }
+    .main-select select {
+        padding-left: 20px;
+    }
 }
 @media screen and (max-width: 321px) {
     .pro-line {
-        min-width: 80px;
+        max-width: 80px;
+    }
+}
+@media screen and (min-width: 768px) {
+    .pro-line {
+        min-width: 150px;
+    }
+    .size-max input {
+        max-width: 35%;
+    }
+    .main-select-center {
+        height: 107px;
+        display: flex;
+        align-items: center;
+    }
+}
+@media screen and (max-width: 978px) {
+    .main-select-center {
+        height: 380px;
+        display: flex;
+        align-items: center;
     }
 }
 @media screen and (min-width: 1200px) {
@@ -103,7 +126,6 @@ main {
 .pro-line {
     content: "";
     width: 10px;
-    min-width: 150px;
     height: 5px;
     border-radius: 2px;
     background-color: #ccc;
@@ -141,17 +163,71 @@ main {
     border: 1px solid #e6e6e6;
     color: #666;
     font-size: 1.8rem;
+    margin-bottom: 3rem;
 }
+/*选择箱型*/
 .logo {
-    background-color: #f9f9f9;
-    padding-left: 0.8rem;
+    background-color: #f3f3f3;
+    padding-left: 8px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.logo img {
+    width: 19px;
 }
 .logo span {
     color: #1d7ad9;
+    font-size: 16px;
+    font-weight: 700;
 }
 .option {
     padding: 2rem 0;
     background-color: #fbfcff;
+    border-top: 1px solid #e7e7e7;
+    border-bottom: 1px solid #e7e7e7;
+}
+.option-pad {
+    padding: 0.5rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/*下拉框*/
+.main-select {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.main-select select {
+    font-size: 15px;
+    border: 1px solid #e8e8e8;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: url("../images/round.png") no-repeat scroll right center;
+    padding: 5px 40px 5px 20px;
+    margin-right: 18px;
+}
+.size-bottom .radio-dot {
+    margin-top: 5px;
+}
+.size-bottom {
+    overflow: hidden;
+}
+
+/*按钮*/
+.main-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+}
+.main-button button {
+    background-color: #e15053;
+    font-size: 24px;
+    width: 180px;
+    height: 46px;
+    border: none;
 }
 /*伪类*/
 input[type = "radio"] {
@@ -162,13 +238,8 @@ input[type = "text"] {
     margin-right: 8px;
     margin-top: 4px;
 }
-.radio-dot:checked + .radio-dot{
-    background-color: #1d7ad9;
-    background-size: 50% 50%;
-    border: none;
-}
 input[type="radio"] + label::before {
-    content: "\a0";
+    content: "";
     display: inline-block;
     vertical-align: middle;
     font-size: 1.8rem;
@@ -182,7 +253,7 @@ input[type="radio"] + label::before {
     text-indent: .15em;
 }
 input[type="radio"]:checked+label::before {
-    border: 5px solid #1d7ad9;
+    border: 6px solid #1d7ad9;
     background-color: #ffffff;
     width: 16px;
     height: 16px;
@@ -201,11 +272,31 @@ footer a:hover {
     text-decoration: none;
 }
 footer img {
-    margin: 1rem 0;
+    margin: 1.5rem 0;
 }
 .lead {
     margin: 2rem 0;
     font-size: 1.6rem;
+    font-weight: 700;
+}
+.footer-link a {
+    margin-right: 1.5rem;
+}
+.footer-link {
+    margin-bottom: 1.5rem;
+}
+.footer-start {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.footer-end {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.qr-margin {
+    margin-right: 1.5rem;
 }
 .footer-foot {
     color: #fff;
