@@ -35,9 +35,9 @@ html,body {
     }
 }
 @media screen and (min-width: 1200px) {
-    .col-lg-2 {
-        width: 10%;
-    }
+   .top-nav .col-lg-1 {
+       width: 10%;
+   }
 }
 /*页头开始*/
 header {
@@ -49,8 +49,10 @@ header {
     align-items: center;
     height: 3rem;
 }
-.top-box div {
+.top-box  .top-color {
     color: #fff;
+}
+.top-box div {
     font-size: 1.4rem;
 }
 .login,
@@ -58,11 +60,18 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+.login {
+    color: #fff;
+    border-left: 1px solid #fff;
     width: 5rem;
     height: 3rem;
 }
-.login {
-    border-left: 1px solid #fff;
+.register {
+    color: #000;
+    background-color: #fff;
+    width: 6rem;
+    height: 3rem;
 }
 .login:hover,
 .register:hover {
@@ -273,6 +282,9 @@ footer a:hover {
 }
 footer img {
     margin: 1.5rem 0;
+}
+.footer-pad {
+    padding: 2rem 0;
 }
 .lead {
     margin: 2rem 0;
