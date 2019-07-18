@@ -1,0 +1,147 @@
+@import "layout";
+.hg-top {
+  @include flex-center;
+  font-size: 18px;
+  & .back {
+    position: absolute;
+    left: 0;
+    margin: 0 5px;
+    img {
+      width: 1.3rem;
+    }
+  }
+}
+$pos-ab: absolute;
+.hg-middle {
+  padding-top: 4rem;
+  padding-bottom: 70px;
+  & .content {
+    font-size: $often-font;
+    color: $white;
+    height: 190px;
+    position: relative;
+    img {
+      z-index: -1;
+      width: $full;
+      height: $full;
+    }
+    .avatar {
+      position: $pos-ab;
+      top: 27%;
+      left: 20px;
+      img {
+        width: 84px;
+        height: 84px;
+      }
+    }
+    & .na-layout {
+      @include flex-start;
+      position: $pos-ab;
+      top: 30%;
+      left: 10rem;
+      .name {
+        font-size: 20px;
+        margin-right: 5px;
+      }
+    }
+    & .ad-layout {
+      @include flex-start;
+      position: $pos-ab;
+      top: 50%;
+      left: 10rem;
+      img {
+        width: 15px;
+      }
+      .locate {
+        margin-right: 5px;
+      }
+    }
+  }
+}
+.list {
+  font-size: $often-font;
+  .term-ml {
+    margin-left: 32px;
+  }
+  .line2 {
+    width: 1px;
+    height: 20px;
+    border-left: 1px solid #e1e5e7;
+    margin: 0 10px;
+  }
+  .meg {
+    color: #999;
+  }
+  .ability-wrap, .term-wrap, .meg-wrap, .int-wrap {
+    width: $full;
+    height: 50px;
+    border-bottom: 1px solid #e1e5e7;
+    display: flex;
+    align-items: center;
+  }
+  .int-wrap {
+    height: auto;
+    min-height: 0.3rem;
+  }
+  & .ability-wrap {
+    .line {
+      $tree: 3px;
+      width: $tree;
+      height: 20px;
+      border-left: $tree solid $green;
+      margin: 0 1rem;
+    }
+    span {
+      font-size: 18px;
+    }
+  }
+  & .term-wrap {
+    .star {
+      margin: 0 5px;
+    }
+    .term-mr {
+      margin-right: 5px;
+    }
+    img {
+      width: 12px;
+    }
+  }
+  & .meg-wrap {
+    .salary {
+      color: #f00;
+    }
+  }
+  & .int-wrap {
+    .nowrap {
+      white-space: nowrap;
+    }
+    .self-introduction {
+      font-size: 14px;
+      margin: 15px 15px 15px 0;
+    }
+  }
+}
+.hg-bottom {
+  font-size: $often-font;
+  width: $full;
+  height: 70px;
+  @include flex-center;
+  & .msg-btn,& .contact {
+    display: inline-block;
+    width: 45.5%;
+    height: 50px;
+    border-radius: 5px;
+    font-weight: 700;
+  }
+  & .msg-btn {
+    background-color: $white;
+    color: $green;
+    border: 2px solid $green;
+    margin-right: 5px;
+  }
+  & .contact {
+    background-color: $green;
+    color: $white;
+    border: 2px solid $green;
+  }
+}

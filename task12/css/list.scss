@@ -1,0 +1,217 @@
+@import "layout";
+$often-border: 1px solid;
+.list-top {
+  @include flex-center;
+  & .nav-wrap {
+    a {
+      display: inline-block;
+      width: 4.5rem;
+      height: 2rem;
+    }
+    $darkgreen: #55a8b3;
+    .a-emp {
+      color: $white;
+      background-color: $darkgreen;
+      border: $often-border $darkgreen;
+      border-radius: 5px 0 0 5px;
+      padding: 3px 5px;
+      margin-right: -5px;
+    }
+    .a-sup {
+      color: $green;
+      background-color: $white;
+      border: $often-border $white;
+      border-radius: 5px;
+      padding: 3px 5px;
+    }
+  }
+  & .locate-wrap {
+    position: absolute;
+    right: 5px;
+    .locate {
+      background: url("../images/img.png") no-repeat 0 -150px;
+      width: 42px;
+      height: 44px;
+      transform: scale(0.5);
+    }
+  }
+}
+.list {
+  width: $full;
+  display: flex;
+  align-items: center;
+  position: $fixed;
+  top: 4rem;
+  min-width: 280px;
+  height: 4rem;
+  background-color: $white;
+  color: #aaa;
+  font-size: 14px;
+  border-bottom: $often-border #e1e5e7;
+  z-index: 999;
+  $gray: #ddd;
+  & .list-item:first-child {
+    border-left: 0;
+  }
+  & .list-item {
+    flex: 1;
+    position: relative;
+    text-align: center;
+    border-left: 1px solid #eee;
+    .item-title {
+      line-height: 4rem;
+      text-align: center;
+    }
+    .icon-tri {
+      position: absolute;
+      top: 40%;
+      right: 5px;
+      width: 15px;
+      height: 10px;
+      background: url("../images/img.png")no-repeat 0 0;
+      transform: scale(0.5);
+    }
+    .drop-down {
+      display: none;
+      position: absolute;
+      width: 100%;
+      background-color: #fff;
+      list-style: none;
+      >li {
+        border-top: $often-border $gray;
+        border-left: $often-border $gray;
+        border-right: $often-border $gray;
+        padding: 10px 0;
+      }
+      li:last-child {
+        border-bottom: $often-border $gray;
+      }
+      li:hover {
+        color: $white;
+        background-color: $green;
+      }
+    }
+  }
+  .list-item:hover .drop-down {
+    display: block;
+  }
+}
+.Site-content {
+  width: $full;
+  padding-top: 8rem;
+  padding-bottom: 5rem;
+  & .content {
+    color: #999;
+    @mixin flex-jc {
+      display: flex;
+      justify-content: flex-start;
+    }
+    width: $full;
+    font-size: 14px;
+    border-bottom: $often-border #eee;
+    .main-box {
+    @include flex-jc;
+      margin: 10px 0 0 10px;
+      .icon-date {
+        background: url("../images/img.png")no-repeat 0 -80px;
+        width: 28px;
+        height: 22px;
+        transform: scale(0.7);
+      }
+    }
+    .main-time {
+    @include flex-between;
+      margin: 10px 27px;
+    }
+    .main-span {
+      width: 60%;
+      color: #000;
+      font-size: $often-font;
+      overflow-x: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+    .main-price {
+      @include flex-center;
+      span {
+        font-size: $often-font;
+        color: #f00;
+      }
+      .icon-step {
+        background: url("../images/img.png")no-repeat -6px -20px;
+        width: 13px;
+        height: 18px;
+        transform: scale(0.7);
+        margin-left: 10px;
+      }
+    }
+    .main-site {
+      @include flex-jc;
+      margin: 10px;
+      .icon-loc {
+        background: url("../images/img.png")no-repeat 0 -50px;
+        width: 28px;
+        height: 22px;
+        transform: scale(0.7);
+      }
+    }
+  }
+}
+.list-bottom {
+  @include flex-center;
+  height: 5rem;
+  background-color: #f8fafb;
+  border-top: $often-border #e2eaec;
+  font-size: 12px;
+  & .icon {
+    background: url("../images/img.png")no-repeat;
+    width: 45px;
+    height: 45px;
+    transform: scale(0.6);
+  }
+  & .home-wrap,
+  & .personal-wrap {
+    @include flex-center;
+    flex-direction: column;
+    width: 50px;
+    height: 50px;
+    margin: 0 10%;
+    cursor: pointer;
+  }
+  & .home-wrap {
+    .icon {
+      background-position: -2px -250px;
+    }
+    .home {
+      color: $green;
+      margin-top: -5px;
+    }
+  }
+  & .personal-wrap {
+    .icon {
+      background-position: 0 -200px;
+    }
+    .personal {
+      color: #999;
+      margin-top: -5px;
+    }
+  }
+  & .edit-wrap {
+    @include flex-center;
+    $fifty: 50px;
+    background-color: $green;
+    border-radius: $fifty;
+    width: $fifty;
+    height: $fifty;
+    cursor: pointer;
+    .edit {
+      width: 40px;
+      height: 40px;
+      line-height: 50px;
+      margin-left: 2px;
+      margin-bottom: 5px;
+      background: url("../images/img.png") no-repeat 0 -106px;
+      transform: scale(0.7);
+    }
+  }
+}
